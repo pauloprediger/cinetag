@@ -20,7 +20,8 @@ function NavBar() {
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="me-auto">
 							<CabecalhoLink url="./">Home</CabecalhoLink>
-							<CabecalhoLink url="/Favoritos">Favoritos</CabecalhoLink>
+							<CabecalhoLink url="/favorito">Favoritos</CabecalhoLink>
+							<CabecalhoLink url="/player">Teste de Player</CabecalhoLink>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>

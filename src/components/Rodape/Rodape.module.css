@@ -2,6 +2,8 @@
 
 .rodape{
     background-color: var(--black);
+    position: 'fixed';
+    bottom: 0;
 }
 
 .rodape a {

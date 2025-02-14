@@ -11,11 +11,17 @@ function BannerComponent() {
 	const page = location.pathname.replace('/', '').toLowerCase(); // Converte para minúsculas
 
 	const banners = {
-		favoritos: BannerFavorito,
+		'': BannerHome, // Página inicial sem path
+		favorito: BannerFavorito,
 		player: BannerPlayer,
 	};
 
-	return <img src={banners[page] || BannerHome} alt="Banner da página" className= {styles.banner_img}/>;
+	// Se a rota não estiver no objeto banners, oculta o <img>
+	if (!(page in banners)) {
+		return null;
+	}
+
+	return <img src={banners[page]} alt="Banner da página" className={styles.banner_img} />;
 }
 
 export default BannerComponent;

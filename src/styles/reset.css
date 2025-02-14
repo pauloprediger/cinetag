@@ -1,0 +1,70 @@
+/* CSS Reset - Baseado no método de Josh Comeau */
+@import './variables.css';
+
+/* Remove margens e paddings padrão */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Melhora a tipografia e herança de fontes */
+html {
+	font-size: 100%; /* 16px padrão */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+	font-family: var(--fonte);
+	background-color: var(--gray);
+}
+
+/* Remove estilos padrão de listas */
+ul,
+ol {
+	list-style: none;
+}
+
+/* Remove estilos padrão de links */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Garantindo que os botões e inputs tenham um design mais consistente */
+button,
+input,
+textarea,
+select {
+	font: inherit;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+/* Melhora a acessibilidade e foco */
+button {
+	cursor: pointer;
+}
+
+/* Define imagens e vídeos para serem responsivos */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* Remove a animação do sistema para usuários que preferem */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation: none !important;
+		transition: none !important;
+		scroll-behavior: auto !important;
+	}
+}

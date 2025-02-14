@@ -1,0 +1,18 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true
+	},
+	"extends": ["airbnb", "plugin:react/recommended", "airbnb/hooks", "prettier"],
+	"plugins": ["react"],
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"rules": {
+		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+		"no-use-before-define": ["error", { "variables": false }],
+		"react/prop-types": ["error", { "ignore": ["navigation", "navigation.navigate"] }]
+	}
+}

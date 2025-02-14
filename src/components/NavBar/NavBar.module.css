@@ -1,0 +1,10 @@
+@import "../../styles/variables.css";
+
+.cabecalho {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px 20px;
+	background-color: var(--black); /* Ajuste conforme necessário */
+}
+

@@ -1,0 +1,10 @@
+@import "../../styles/variables.css";
+
+.rodape{
+    background-color: var(--black);
+}
+
+.rodape a {
+    text-decoration: none;
+    color: var(--white);
+}

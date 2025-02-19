@@ -5,7 +5,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 
 /* Melhora a tipografia e herança de fontes */
@@ -15,11 +14,21 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-body {
-	min-height: 100vh;
-	line-height: 1.5;
-	font-family: var(--fonte);
-	background-color: var(--gray);
+html, body {
+    height: 100%; /* Ocupa toda a altura da tela */
+    margin: 0;    /* Remove qualquer margin */
+    display: flex; /* Faz com que o body use flexbox */
+    flex-direction: column; /* Organiza os elementos em coluna */
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o root ocupe a altura total da página */
+}
+
+main {
+    flex: 1; /* O conteúdo principal ocupa o espaço restante */
 }
 
 /* Remove estilos padrão de listas */

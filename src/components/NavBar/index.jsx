@@ -21,7 +21,6 @@ function NavBar() {
 						<Nav className="me-auto">
 							<CabecalhoLink url="./">Home</CabecalhoLink>
 							<CabecalhoLink url="/favorito">Favoritos</CabecalhoLink>
-							<CabecalhoLink url="/player">Teste de Player</CabecalhoLink>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>

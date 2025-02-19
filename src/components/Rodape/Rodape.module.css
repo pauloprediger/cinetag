@@ -2,8 +2,11 @@
 
 .rodape{
     background-color: var(--black);
-    position: 'fixed';
+    position: relative;
+    width: 100%;
     bottom: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .rodape a {

@@ -1,7 +1,8 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './NotFound.css';
 
-const NotFound = () => {
+function NotFound() {
 	return (
 		<div className="not-found-container">
 			<div className="film-frame">
@@ -19,6 +20,6 @@ const NotFound = () => {
 			</div>
 		</div>
 	);
-};
+}
 
 export default NotFound;
